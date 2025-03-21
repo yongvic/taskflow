@@ -1,0 +1,93 @@
+.pub{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    background-color:  #F5F5F5;
+    justify-content: center;
+}
+
+.btn_start{
+    background-color: #FFC107;
+    border-radius: 115px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    color:  #6c6666;
+    padding: 8px 15px;
+    margin-top: 40px;
+}
+.btn_start:hover {
+    background-color: #757567; 
+    color: #ffffff;
+}
+  
+  .fonctionnalites {
+    display: flex;
+    justify-content: center;
+    gap: 250px; 
+  }
+  
+  .mini_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    color: #000000;
+  }
+  
+  .img {
+    width: 50px;
+    height: auto;
+  }
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.explication1, .explication2, .explication3 {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    opacity: 0; 
+    animation: slideIn 1s ease-out forwards;
+    color: #808080; 
+}
+
+.explication1 {
+    animation-delay: 0.3s; 
+}
+
+.explication2 {
+    animation-delay: 0.6s; 
+}
+
+.explication3 {
+    animation-delay: 0.9s;
+}
+
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+}
